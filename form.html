@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script type="text/javascript" src="x.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornsilk;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .formButton {
+            display: inline-block;
+            background-color: #39b42e;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            width: 150px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #444;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personal Info</h1>
+    <h2> Please enter your Username:</h2><br>
+    <input type="text" id="userNameForm" placeholder="Username"><br>
+    <button onclick="retriveUserNameForm()" class="formButton">Retrive from login</button>
+    <hr>
+    <div class="alert alert-dark" role="alert" style="border-color: black;">
+        Username can also be retrieved from login page using button
+    </div>
+    <hr>
+    <h2>Please enter your password:</h2><br>
+    <input type="password" id="passwordForm" placeholder="Passwrod"><br>
+    <button onclick="retrivePasswordForm()" class="formButton">Retrive from login</button>
+    <hr>
+    <div class="alert alert-dark" role="alert" style="border-color: black;">
+        Password can also be retrieved from login page using button
+    </div>
+    <hr>
+    <h2>Please Enter your age:</h2><br>
+    <input type="number" id="ageChkForm" oninput="chkAgeForm()">
+    <hr>
+    <div class="alert alert-dark" role="alert" style="border-color: black;" id="ageResult">
+        Valis age is between 18 to 100
+    </div>
+    <hr>
+    <h2>Gender:</h2>
+    <select>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <div class="alert alert-dark" role="alert" style="border-color: black;" id="ageResult">
+        Gender select is crucial, if you dont want to identify as male or female just select other :)
+    </div>
+    <h2>Add your comments:</h2><br>
+    <input type="text" id="commentsForm" style="width: 20%; padding: 2%;" placeholder="Add comments here!"><br>
+    <button onclick="charactersMax()" class="formButton">Submit comments</button>
+    <hr>
+    <div id="commentsResult" class="alert alert-dark" role="alert" style="border-color: black;">
+        comments has minimum of 18 letters and maximum of 100 letters
+    </div>
+
+    </div>
+    <footer class="pt-3 mt-4 text-muted border-top">
+        &copy; FCKTLV
+    </footer>
+    </div>
+
+</body>
+
+</html>

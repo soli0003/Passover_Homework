@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <script type="text/javascript" src="x.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        textarea {
+            width: 800px;
+            height: 300px;
+            padding: 0 0 0 20px;
+            line-height: 30px;
+            background-color: rgb(19, 17, 17);
+            color: white;
+        }
+
+        h1 {
+            color: #444;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Notepad</h1>
+    <div class="container">
+        <textarea placeholder="Enjoy this free special notepad!" id="noBadLang"
+            onkeyup="activateNotepadFunc(event)"></textarea>
+        <hr>
+        <div class="alert alert-info" role="alert" style="border-color: black;" id="notepadErrorDiv">
+            Words with more than 4 letters or/and signs @ and = are forbidden and will be automatically deleted </div>
+    </div>
+
+    </div>
+    <footer class="pt-3 mt-4 text-muted border-top">
+        &copy; FCKTLV
+    </footer>
+    </div>
+
+    <script>
+
+
+
+    </script>
+
+
+</body>
+
+</html>

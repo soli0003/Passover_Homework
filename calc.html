@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <script type="text/javascript" src="x.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        #calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            background-color: #e6e6e6;
+            color: #333;
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .operatorsButton {
+            background-color: green;
+
+        }
+
+        .calcInput {
+            border: none;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: left;
+            padding: 20px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        h1 {
+    color: #444;
+    text-align: center;
+    margin-top: 50px;
+}
+    </style>
+</head>
+
+<body>
+    <h1>calculator</h1>
+    <div id="calculator">
+        <input id="myInput" readonly class="calcInput"><br>
+        <button onclick="writeToCalc(`7`)">7</button>
+        <button onclick="writeToCalc(`8`)">8</button>
+        <button onclick="writeToCalc(`9`)">9</button>
+        <button class="operatorsButton" onclick="writeToCalc(`/`)">/</button>
+        <button class="operatorsButton" onclick="clearCalc()">AC</button><br>
+        <button onclick="writeToCalc(`4`)">4</button>
+        <button onclick="writeToCalc(`5`)">5</button>
+        <button onclick="writeToCalc(`6`)">6</button>
+        <button class="operatorsButton" onclick="writeToCalc(`*`)">*</button>
+        <button class="operatorsButton" onclick="del1Number()">Del</button><br>
+        <button onclick="writeToCalc(`1`)">1</button>
+        <button onclick="writeToCalc(`2`)">2</button>
+        <button onclick="writeToCalc(`3`)">3</button>
+        <button class="operatorsButton" onclick="writeToCalc(`-`)">-</button><br>
+        <button onclick="writeToCalc(`0`)">0</button>
+        <button onclick="writeToCalc(`.`)">.</button>
+        <button class="operatorsButton" onclick="writeToCalc(`+`)">+</button>
+        <button class="operatorsButton" onclick="calculate()">=</button>
+    </div>
+
+    </div>
+    <footer class="pt-3 mt-4 text-muted border-top">
+        &copy; FCKTLV
+    </footer>
+    </div>
+</body>
+
+</html>
